@@ -7,7 +7,6 @@ class TestCalculator(unittest.TestCase):
     def setUp(self):
         self.calc = Calculator()
 
-    # Addition
     def test_add_positive(self):
         self.assertEqual(self.calc.add(2, 3), 5)
 
@@ -17,7 +16,6 @@ class TestCalculator(unittest.TestCase):
     def test_add_zero(self):
         self.assertEqual(self.calc.add(5, 0), 5)
 
-    # Subtraction
     def test_subtract_positive(self):
         self.assertEqual(self.calc.subtract(5, 3), 2)
 
@@ -27,7 +25,6 @@ class TestCalculator(unittest.TestCase):
     def test_subtract_zero(self):
         self.assertEqual(self.calc.subtract(5, 0), 5)
 
-    # Multiplication
     def test_multiply_positive(self):
         self.assertEqual(self.calc.multiply(2, 3), 6)
 
@@ -37,7 +34,6 @@ class TestCalculator(unittest.TestCase):
     def test_multiply_zero(self):
         self.assertEqual(self.calc.multiply(5, 0), 0)
 
-    # Division
     def test_divide_positive(self):
         self.assertEqual(self.calc.divide(10, 2), 5)
 
